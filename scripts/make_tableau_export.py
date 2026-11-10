@@ -1,5 +1,9 @@
 """Export Tableau-ready extracts from the audited parquet artifacts via SQL.
 
+A MySQL-style standalone mirror of these fact tables lives in forecast.sql at
+the repo root (banquet.sql format), and outputs/powerbi/README.md documents the
+Power BI build on top of the same files.
+
 Runs DuckDB directly over the project parquet files (no server, no copy) and
 writes three tidy extracts to outputs/tableau/:
 

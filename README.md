@@ -45,6 +45,9 @@ data/raw/                SEC/FRED caches (gitignored)
 data/processed/          cleaned series, backtest results, test_access.log (gitignored)
 outputs/results_memo.md  the findings memo (with figures) built by scripts/make_memo
 Revenue_Forecast_Review.xlsx  the Excel deliverable built by scripts/make_excel_report
+outputs/tableau/           BI fact-table CSVs for Tableau / Power BI (make_tableau_export)
+forecast.sql               banquet-style SQL mirror of the MIS fact tables (schema + data)
+outputs/powerbi/README.md  the Power BI dashboard build guide (measures, layout, RAG rules)
 ```
 
 ## Pipeline
@@ -61,6 +64,7 @@ Revenue_Forecast_Review.xlsx  the Excel deliverable built by scripts/make_excel_
 | 8. the test | `python -m scripts.run_test_once` | refuses to run without a plan, with changed inputs, or twice |
 | 9. history | `python -m scripts.show_runs` | compact view of the append-only run log |
 | 10. excel report | `python -m scripts.make_excel_report` | builds `Revenue_Forecast_Review.xlsx` — review workbook with live formulas (with baked-in results), charts, drop-downs and the embedded memo figures |
+| 11. bi extracts | `python -m scripts.make_tableau_export` | DuckDB fact-table CSVs for Tableau / Power BI; `forecast.sql` is the MySQL-style mirror |
 
 Tests: `.venv\Scripts\python.exe -m pytest` (or `pytest` with the venv active).
 The full suite takes ~6 minutes; the five "no future information reaches X"
