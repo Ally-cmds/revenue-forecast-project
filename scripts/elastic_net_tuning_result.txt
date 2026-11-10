@@ -1,0 +1,52 @@
+VALIDATION MAPE, all companies pooled (lower is better)
+ model
+enet_a0.0003_l0.1    7.60
+enet_a0.0003_l0.3    7.60
+enet_a0.0003_l0.5    7.60
+enet_a0.001_l0.1     7.60
+enet_a0.001_l0.3     7.60
+enet_a0.001_l0.5     7.60
+enet_a0.003_l0.1     7.60
+enet_a0.003_l0.3     7.60
+enet_a0.01_l0.1      7.62
+enet_a0.003_l0.5     7.64
+ridge_drivers        7.64
+enet_a0.01_l0.3      7.74
+enet_a0.01_l0.5      7.90
+seasonal_drift       8.46
+
+BY SECTOR
+                                     mape  median_ape  bias   n
+sector           model                                        
+home_improvement enet_a0.0003_l0.1  7.11        4.25  0.31  76
+                 enet_a0.0003_l0.3  7.11        4.23  0.31  76
+                 enet_a0.0003_l0.5  7.11        4.16  0.31  76
+                 enet_a0.001_l0.1   7.11        4.22  0.31  76
+                 enet_a0.001_l0.3   7.10        3.98  0.31  76
+                 enet_a0.001_l0.5   7.09        3.91  0.32  76
+                 enet_a0.003_l0.1   7.09        3.96  0.31  76
+                 enet_a0.003_l0.3   7.05        3.76  0.36  76
+                 enet_a0.003_l0.5   7.06        3.63  0.44  76
+                 enet_a0.01_l0.1    7.04        3.71  0.37  76
+                 enet_a0.01_l0.3    7.09        3.87  0.57  76
+                 enet_a0.01_l0.5    7.20        4.01  0.73  76
+                 ridge_drivers      7.04        3.94  0.31  76
+                 seasonal_drift     7.96        3.82  0.44  76
+homebuilders     enet_a0.0003_l0.1  8.07        5.83  2.52  80
+                 enet_a0.0003_l0.3  8.07        5.83  2.51  80
+                 enet_a0.0003_l0.5  8.07        5.88  2.50  80
+                 enet_a0.001_l0.1   8.07        5.85  2.51  80
+                 enet_a0.001_l0.3   8.07        5.87  2.48  80
+                 enet_a0.001_l0.5   8.08        5.91  2.46  80
+                 enet_a0.003_l0.1   8.08        5.90  2.48  80
+                 enet_a0.003_l0.3   8.12        6.20  2.45  80
+                 enet_a0.003_l0.5   8.20        6.20  2.43  80
+                 enet_a0.01_l0.1    8.16        6.11  2.46  80
+                 enet_a0.01_l0.3    8.36        5.72  2.34  80
+                 enet_a0.01_l0.5    8.55        6.24  2.17  80
+                 ridge_drivers      8.21        6.19  2.59  80
+                 seasonal_drift     8.94        6.19  0.37  80
+
+FALLBACKS: {'ridge_drivers': 7, 'enet_a0.0003_l0.1': 7, 'enet_a0.0003_l0.3': 7, 'enet_a0.0003_l0.5': 7, 'enet_a0.001_l0.1': 7, 'enet_a0.001_l0.3': 7, 'enet_a0.001_l0.5': 7, 'enet_a0.003_l0.1': 7, 'enet_a0.003_l0.3': 7, 'enet_a0.003_l0.5': 7, 'enet_a0.01_l0.1': 7, 'enet_a0.01_l0.3': 7, 'enet_a0.01_l0.5': 7}
+
+Run record saved: C:\Users\allyg\DataAnalysisProject\revenue-forecast-project\runs\run_log.jsonl

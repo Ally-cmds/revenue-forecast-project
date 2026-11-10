@@ -1,0 +1,41 @@
+VALIDATION MAPE, all companies pooled (lower is better)
+ model
+ridge_drivers     7.64
+pca_k6            7.65
+pca_k1            7.71
+pca_k4            7.77
+pca_k3            7.78
+pca_k2            7.79
+ridge_drivers4    7.90
+seasonal_drift    8.46
+
+BY SECTOR
+                                  mape  median_ape  bias   n
+sector           model                                     
+home_improvement pca_k1          7.03        3.47 -0.05  76
+                 pca_k2          7.06        3.52  0.12  76
+                 pca_k3          7.11        3.61 -0.02  76
+                 pca_k4          7.08        3.55  0.28  76
+                 pca_k6          7.15        3.74  0.46  76
+                 ridge_drivers   7.04        3.94  0.31  76
+                 ridge_drivers4  7.67        4.60  0.47  76
+                 seasonal_drift  7.96        3.82  0.44  76
+homebuilders     pca_k1          8.36        6.55  2.22  80
+                 pca_k2          8.49        6.75  2.44  80
+                 pca_k3          8.42        6.81  2.30  80
+                 pca_k4          8.43        6.29  2.55  80
+                 pca_k6          8.13        6.10  2.65  80
+                 ridge_drivers   8.21        6.19  2.59  80
+                 ridge_drivers4  8.12        6.39  2.74  80
+                 seasonal_drift  8.94        6.19  0.37  80
+
+VARIANCE OF THE 16 DRIVER FEATURES KEPT BY PCA (last fit, data through 2021):
+  pca_k1: 38%
+  pca_k2: 69%
+  pca_k3: 79%
+  pca_k4: 87%
+  pca_k6: 94%
+
+FALLBACKS: {'ridge_drivers': 7, 'ridge_drivers4': 7, 'pca_k1': 7, 'pca_k2': 7, 'pca_k3': 7, 'pca_k4': 7, 'pca_k6': 7}
+
+Run record saved: C:\Users\allyg\DataAnalysisProject\revenue-forecast-project\runs\run_log.jsonl

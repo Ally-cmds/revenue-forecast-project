@@ -1,0 +1,281 @@
+{
+  "run_name": "baselines_ridge",
+  "timestamp": "2026-10-12T20:32:35",
+  "git_commit": null,
+  "split": {
+    "validation_start": "2018-01-01",
+    "test_start": "2022-01-01"
+  },
+  "data": {
+    "rows": 644,
+    "tickers": [
+      "BLDR",
+      "DHI",
+      "FND",
+      "HD",
+      "KBH",
+      "LEN",
+      "LOW",
+      "NVR",
+      "SHW",
+      "TOL"
+    ],
+    "first_period": "2009-03-31",
+    "last_period": "2026-08-31",
+    "hash": "20c6907c5c00a1eb"
+  },
+  "models": {
+    "naive_last": {},
+    "seasonal_naive": {},
+    "seasonal_drift": {},
+    "ridge_own": {
+      "drivers": [],
+      "interactions": false,
+      "alpha": 10.0,
+      "min_rows": 40
+    },
+    "ridge_drivers": {
+      "drivers": [
+        "mortgage30",
+        "starts"
+      ],
+      "interactions": false,
+      "alpha": 10.0,
+      "min_rows": 40
+    },
+    "ridge_drivers_x_sector": {
+      "drivers": [
+        "mortgage30",
+        "starts"
+      ],
+      "interactions": true,
+      "alpha": 10.0,
+      "min_rows": 40
+    }
+  },
+  "fallbacks": {
+    "ridge_own": 7,
+    "ridge_drivers": 7,
+    "ridge_drivers_x_sector": 7
+  },
+  "metrics_excluding_test": [
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "naive_last",
+      "mape": 12.19,
+      "median_ape": 12.93,
+      "bias": -2.18,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "ridge_drivers",
+      "mape": 7.81,
+      "median_ape": 4.2,
+      "bias": -0.52,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "ridge_drivers_x_sector",
+      "mape": 7.48,
+      "median_ape": 3.33,
+      "bias": 0.82,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "ridge_own",
+      "mape": 6.39,
+      "median_ape": 2.5,
+      "bias": 0.86,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "seasonal_drift",
+      "mape": 6.38,
+      "median_ape": 2.62,
+      "bias": 1.22,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "home_improvement",
+      "model": "seasonal_naive",
+      "mape": 10.1,
+      "median_ape": 6.53,
+      "bias": -9.84,
+      "n": 86
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "naive_last",
+      "mape": 22.44,
+      "median_ape": 17.71,
+      "bias": -1.13,
+      "n": 97
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "ridge_drivers",
+      "mape": 7.46,
+      "median_ape": 4.8,
+      "bias": 1.44,
+      "n": 97
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "ridge_drivers_x_sector",
+      "mape": 9.23,
+      "median_ape": 7.24,
+      "bias": -0.79,
+      "n": 97
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "ridge_own",
+      "mape": 7.75,
+      "median_ape": 5.49,
+      "bias": 3.04,
+      "n": 97
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "seasonal_drift",
+      "mape": 7.8,
+      "median_ape": 5.57,
+      "bias": 1.45,
+      "n": 97
+    },
+    {
+      "split": "train",
+      "sector": "homebuilders",
+      "model": "seasonal_naive",
+      "mape": 17.96,
+      "median_ape": 17.09,
+      "bias": -17.87,
+      "n": 97
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "naive_last",
+      "mape": 11.25,
+      "median_ape": 10.43,
+      "bias": -2.34,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "ridge_drivers",
+      "mape": 7.04,
+      "median_ape": 3.94,
+      "bias": 0.31,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "ridge_drivers_x_sector",
+      "mape": 7.03,
+      "median_ape": 3.93,
+      "bias": 0.56,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "ridge_own",
+      "mape": 7.61,
+      "median_ape": 4.73,
+      "bias": -0.03,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "seasonal_drift",
+      "mape": 7.96,
+      "median_ape": 3.82,
+      "bias": 0.44,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "home_improvement",
+      "model": "seasonal_naive",
+      "mape": 13.08,
+      "median_ape": 8.53,
+      "bias": -11.84,
+      "n": 76
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "naive_last",
+      "mape": 20.42,
+      "median_ape": 15.04,
+      "bias": 0.24,
+      "n": 80
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "ridge_drivers",
+      "mape": 8.21,
+      "median_ape": 6.19,
+      "bias": 2.59,
+      "n": 80
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "ridge_drivers_x_sector",
+      "mape": 8.27,
+      "median_ape": 6.29,
+      "bias": 2.35,
+      "n": 80
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "ridge_own",
+      "mape": 8.73,
+      "median_ape": 7.07,
+      "bias": 2.36,
+      "n": 80
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "seasonal_drift",
+      "mape": 8.94,
+      "median_ape": 6.19,
+      "bias": 0.37,
+      "n": 80
+    },
+    {
+      "split": "validation",
+      "sector": "homebuilders",
+      "model": "seasonal_naive",
+      "mape": 14.34,
+      "median_ape": 12.98,
+      "bias": -10.71,
+      "n": 80
+    }
+  ],
+  "test_set_openings": 0,
+  "notes": ""
+}

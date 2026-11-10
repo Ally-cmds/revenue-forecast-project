@@ -1,0 +1,22 @@
+# caches & environments
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+
+# data (raw caches and processed outputs are local-only by design)
+/data/
+*.parquet
+
+# secrets & local config (NEVER publish)
+opencode.json
+.env
+
+# personal application material (CVs, cover letters) - local only
+/cv/
+
+# stray / junk files
+test.txt
+*.bak
+Thumbs.db
+.DS_Store

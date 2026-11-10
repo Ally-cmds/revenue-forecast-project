@@ -1,0 +1,61 @@
+VALIDATION MAPE, all companies pooled (lower is better)
+ model
+ridge_drivers      7.64
+seasonal_drift     8.46
+gbm_d2             9.79
+gbm_d3            10.51
+
+BY SECTOR
+                                   mape  median_ape  bias   n
+sector           model                                      
+home_improvement gbm_d2           9.17        5.35  1.77  76
+                 gbm_d3          10.00        5.17  3.20  76
+                 ridge_drivers    7.04        3.94  0.31  76
+                 seasonal_drift   7.96        3.82  0.44  76
+homebuilders     gbm_d2          10.38        8.36  3.31  80
+                 gbm_d3          10.99        9.27  4.83  80
+                 ridge_drivers    8.21        6.19  2.59  80
+                 seasonal_drift   8.94        6.19  0.37  80
+
+FALLBACKS: {'ridge_drivers': 7, 'gbm_d2': 7, 'gbm_d3': 7}
+
+Run record saved: C:\Users\allyg\DataAnalysisProject\revenue-forecast-project\runs\run_log.jsonl
+['ticker', 'sector', 'period_end', 'model', 'actual', 'forecast', 'pct_error', 'abs_pct_error', 'split']
+ticker                          BLDR
+sector              home_improvement
+period_end       2014-03-31 00:00:00
+model                  ridge_drivers
+actual                   345909000.0
+forecast            365143494.948371
+pct_error                   0.055606
+abs_pct_error               0.055606
+split                          train
+Name: 1, dtype: object
+sector            split     
+home_improvement  train         86
+                  validation    76
+homebuilders      train         97
+                  validation    80
+dtype: int64
+VALIDATION MAPE, all companies pooled (lower is better)
+ model
+ridge_drivers      7.64
+seasonal_drift     8.46
+gbm_d2             9.79
+gbm_d3            10.51
+
+BY SECTOR
+                                   mape  median_ape  bias   n
+sector           model                                      
+home_improvement gbm_d2           9.17        5.35  1.77  76
+                 gbm_d3          10.00        5.17  3.20  76
+                 ridge_drivers    7.04        3.94  0.31  76
+                 seasonal_drift   7.96        3.82  0.44  76
+homebuilders     gbm_d2          10.38        8.36  3.31  80
+                 gbm_d3          10.99        9.27  4.83  80
+                 ridge_drivers    8.21        6.19  2.59  80
+                 seasonal_drift   8.94        6.19  0.37  80
+
+FALLBACKS: {'ridge_drivers': 7, 'gbm_d2': 14, 'gbm_d3': 14}
+
+Run record saved: C:\Users\allyg\DataAnalysisProject\revenue-forecast-project\runs\run_log.jsonl

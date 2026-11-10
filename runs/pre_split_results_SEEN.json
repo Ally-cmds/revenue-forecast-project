@@ -1,0 +1,317 @@
+{
+  "status": "SEEN BEFORE THE SPLIT EXISTED. All-period results, including what is now the test period. These models have no pristine test set.",
+  "timestamp": "2026-10-12T20:32:58",
+  "git_commit": null,
+  "data": {
+    "rows": 644,
+    "tickers": [
+      "BLDR",
+      "DHI",
+      "FND",
+      "HD",
+      "KBH",
+      "LEN",
+      "LOW",
+      "NVR",
+      "SHW",
+      "TOL"
+    ],
+    "first_period": "2009-03-31",
+    "last_period": "2026-08-31",
+    "hash": "20c6907c5c00a1eb"
+  },
+  "models_covered": [
+    "naive_last",
+    "seasonal_naive",
+    "seasonal_drift",
+    "ridge_own",
+    "ridge_drivers",
+    "ridge_drivers_x_sector"
+  ],
+  "forecasts_per_model": {
+    "naive_last": 524,
+    "ridge_drivers": 524,
+    "ridge_drivers_x_sector": 524,
+    "ridge_own": 524,
+    "seasonal_drift": 524,
+    "seasonal_naive": 524
+  },
+  "by_sector_all_periods": [
+    {
+      "sector": "home_improvement",
+      "model": "naive_last",
+      "mape": 10.72,
+      "median_ape": 10.12,
+      "bias": -1.57,
+      "n": 254
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_drivers",
+      "mape": 6.64,
+      "median_ape": 4.06,
+      "bias": -0.08,
+      "n": 254
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_drivers_x_sector",
+      "mape": 6.63,
+      "median_ape": 4.07,
+      "bias": 0.46,
+      "n": 254
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_own",
+      "mape": 6.17,
+      "median_ape": 3.36,
+      "bias": 1.6,
+      "n": 254
+    },
+    {
+      "sector": "home_improvement",
+      "model": "seasonal_drift",
+      "mape": 6.2,
+      "median_ape": 2.84,
+      "bias": 0.98,
+      "n": 254
+    },
+    {
+      "sector": "home_improvement",
+      "model": "seasonal_naive",
+      "mape": 9.95,
+      "median_ape": 6.18,
+      "bias": -7.11,
+      "n": 254
+    },
+    {
+      "sector": "homebuilders",
+      "model": "naive_last",
+      "mape": 20.61,
+      "median_ape": 15.32,
+      "bias": 0.7,
+      "n": 270
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_drivers",
+      "mape": 8.35,
+      "median_ape": 6.11,
+      "bias": 1.85,
+      "n": 270
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_drivers_x_sector",
+      "mape": 8.95,
+      "median_ape": 6.87,
+      "bias": 0.89,
+      "n": 270
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_own",
+      "mape": 8.51,
+      "median_ape": 6.32,
+      "bias": 3.58,
+      "n": 270
+    },
+    {
+      "sector": "homebuilders",
+      "model": "seasonal_drift",
+      "mape": 8.43,
+      "median_ape": 6.03,
+      "bias": 1.35,
+      "n": 270
+    },
+    {
+      "sector": "homebuilders",
+      "model": "seasonal_naive",
+      "mape": 14.3,
+      "median_ape": 12.99,
+      "bias": -10.02,
+      "n": 270
+    }
+  ],
+  "by_sector_excluding_2020": [
+    {
+      "sector": "home_improvement",
+      "model": "naive_last",
+      "mape": 10.51,
+      "median_ape": 10.28,
+      "bias": -1.3,
+      "n": 234
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_drivers",
+      "mape": 6.47,
+      "median_ape": 3.94,
+      "bias": -0.02,
+      "n": 234
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_drivers_x_sector",
+      "mape": 6.46,
+      "median_ape": 4.0,
+      "bias": 0.56,
+      "n": 234
+    },
+    {
+      "sector": "home_improvement",
+      "model": "ridge_own",
+      "mape": 5.93,
+      "median_ape": 3.23,
+      "bias": 1.96,
+      "n": 234
+    },
+    {
+      "sector": "home_improvement",
+      "model": "seasonal_drift",
+      "mape": 5.87,
+      "median_ape": 2.73,
+      "bias": 1.42,
+      "n": 234
+    },
+    {
+      "sector": "home_improvement",
+      "model": "seasonal_naive",
+      "mape": 9.7,
+      "median_ape": 5.89,
+      "bias": -6.8,
+      "n": 234
+    },
+    {
+      "sector": "homebuilders",
+      "model": "naive_last",
+      "mape": 20.55,
+      "median_ape": 15.32,
+      "bias": 0.63,
+      "n": 250
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_drivers",
+      "mape": 8.07,
+      "median_ape": 6.01,
+      "bias": 1.42,
+      "n": 250
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_drivers_x_sector",
+      "mape": 8.71,
+      "median_ape": 6.71,
+      "bias": 0.38,
+      "n": 250
+    },
+    {
+      "sector": "homebuilders",
+      "model": "ridge_own",
+      "mape": 8.29,
+      "median_ape": 6.11,
+      "bias": 3.44,
+      "n": 250
+    },
+    {
+      "sector": "homebuilders",
+      "model": "seasonal_drift",
+      "mape": 8.27,
+      "median_ape": 5.99,
+      "bias": 1.39,
+      "n": 250
+    },
+    {
+      "sector": "homebuilders",
+      "model": "seasonal_naive",
+      "mape": 14.49,
+      "median_ape": 13.42,
+      "bias": -10.69,
+      "n": 250
+    }
+  ],
+  "mape_by_company_all_periods": {
+    "BLDR": {
+      "naive_last": 12.49,
+      "ridge_drivers": 12.98,
+      "ridge_drivers_x_sector": 12.84,
+      "ridge_own": 13.01,
+      "seasonal_drift": 13.77,
+      "seasonal_naive": 19.95
+    },
+    "DHI": {
+      "naive_last": 14.04,
+      "ridge_drivers": 5.8,
+      "ridge_drivers_x_sector": 6.48,
+      "ridge_own": 5.55,
+      "seasonal_drift": 5.63,
+      "seasonal_naive": 14.8
+    },
+    "FND": {
+      "naive_last": 5.93,
+      "ridge_drivers": 7.5,
+      "ridge_drivers_x_sector": 7.82,
+      "ridge_own": 7.1,
+      "seasonal_drift": 6.9,
+      "seasonal_naive": 12.81
+    },
+    "HD": {
+      "naive_last": 9.95,
+      "ridge_drivers": 4.71,
+      "ridge_drivers_x_sector": 4.63,
+      "ridge_own": 3.92,
+      "seasonal_drift": 3.75,
+      "seasonal_naive": 6.55
+    },
+    "KBH": {
+      "naive_last": 20.1,
+      "ridge_drivers": 11.21,
+      "ridge_drivers_x_sector": 11.4,
+      "ridge_own": 11.77,
+      "seasonal_drift": 11.14,
+      "seasonal_naive": 16.19
+    },
+    "LEN": {
+      "naive_last": 22.26,
+      "ridge_drivers": 7.18,
+      "ridge_drivers_x_sector": 8.12,
+      "ridge_own": 6.98,
+      "seasonal_drift": 7.33,
+      "seasonal_naive": 15.53
+    },
+    "LOW": {
+      "naive_last": 13.31,
+      "ridge_drivers": 4.21,
+      "ridge_drivers_x_sector": 4.38,
+      "ridge_own": 4.35,
+      "seasonal_drift": 4.19,
+      "seasonal_naive": 6.39
+    },
+    "NVR": {
+      "naive_last": 13.79,
+      "ridge_drivers": 7.38,
+      "ridge_drivers_x_sector": 7.7,
+      "ridge_own": 8.39,
+      "seasonal_drift": 7.49,
+      "seasonal_naive": 10.4
+    },
+    "SHW": {
+      "naive_last": 9.86,
+      "ridge_drivers": 5.08,
+      "ridge_drivers_x_sector": 4.9,
+      "ridge_own": 3.86,
+      "seasonal_drift": 3.76,
+      "seasonal_naive": 6.84
+    },
+    "TOL": {
+      "naive_last": 32.24,
+      "ridge_drivers": 10.08,
+      "ridge_drivers_x_sector": 10.91,
+      "ridge_own": 9.86,
+      "seasonal_drift": 10.48,
+      "seasonal_naive": 14.22
+    }
+  }
+}
