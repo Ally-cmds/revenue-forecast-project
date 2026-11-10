@@ -130,15 +130,3 @@ cannot change).
   (features, backtest, models/pooled, ridge, baselines, calibration,
   stats_tests, splits, freeze, frozen_test, plan, context, evaluation,
   data/macro_loader) was modified.
-
-## Known limitations / next steps
-
-- `config.py` is not in `freeze.FROZEN_CODE`; a future plan should fingerprint
-  it too (today it is guarded indirectly via the data fingerprint).
-- The project is deliberately small (10 tickers, 2 sectors); more history and
-  sectors would sharpen inference, and the test conclusion (ridge ≯ baseline)
-  suggests model form, not tuning, is the binding constraint.
-- `opencode.json` (gitignored) holds a plaintext API key — it stays local; never
-  stage, commit, or share it.
-- Initialize git if you want `_git_commit` fingerprints to resolve (they are
-  currently `null` in the run log).
